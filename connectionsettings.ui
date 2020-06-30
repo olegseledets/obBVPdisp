@@ -1,0 +1,1641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConnectionSettings</class>
+ <widget class="QDialog" name="ConnectionSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>575</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>575</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>750</width>
+    <height>575</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Окно администратора</string>
+  </property>
+  <widget class="QSplitter" name="splitter">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>750</width>
+     <height>559</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0" rowspan="2">
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_14">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 12px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Работа с базой данных</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_5">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout">
+         <property name="horizontalSpacing">
+          <number>6</number>
+         </property>
+         <property name="verticalSpacing">
+          <number>10</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="minimumSize">
+            <size>
+             <width>176</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 18px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Драйвер</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="cbox_driver">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QComboBox:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+           <property name="currentText">
+            <string>QMYSQL</string>
+           </property>
+           <item>
+            <property name="text">
+             <string>QMYSQL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>QDB2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>QIBASE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>QOCI</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>QODBC</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>QPSQL</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>QSQLITE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>QSQLITE2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>QTDS</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="minimumSize">
+            <size>
+             <width>176</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 18px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Адрес сервера</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="text_ip">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QLineEdit:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+           <property name="inputMask">
+            <string/>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="maxLength">
+            <number>15</number>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="minimumSize">
+            <size>
+             <width>176</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 18px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Порт</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="text_port">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QLineEdit:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="minimumSize">
+            <size>
+             <width>176</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 18px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Имя БД</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="text_DBname">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QLineEdit:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_10">
+           <property name="minimumSize">
+            <size>
+             <width>176</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 18px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Логин</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="text_userName">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QLineEdit:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="minimumSize">
+            <size>
+             <width>176</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 18px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Пароль</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="text_userPass">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QLineEdit:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_16">
+           <property name="minimumSize">
+            <size>
+             <width>176</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 18px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Имя таблицы Груз</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="text_nameTableCargo">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QLineEdit:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_15">
+           <property name="minimumSize">
+            <size>
+             <width>176</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 18px;
+}</string>
+           </property>
+           <property name="text">
+            <string>Имя таблицы Пасс</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLineEdit" name="text_nameTablePass">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QLineEdit:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="Line" name="line_7">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_17">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 12px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Проверка подключений</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_4">
+         <property name="horizontalSpacing">
+          <number>6</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="text_checkDBName">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+
+QLineEdit:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="butt_baseCheck">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+  border-style: outset;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 100);
+  font: bold 16px;
+ color:rgb(14, 27, 143);
+border-color: white;
+  width: 3em;
+  padding: 6px;
+}
+QPushButton:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}
+
+QPushButton:pressed{
+background-color: rgba(255, 255, 255, 200);
+}</string>
+           </property>
+           <property name="text">
+            <string>Проверка базы</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QComboBox" name="cbox_checkTableName">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QComboBox{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QComboBox:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+           <property name="currentText">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="butt_tableCheck">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+  border-style: outset;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 100);
+  font: bold 16px;
+ color:rgb(14, 27, 143);
+border-color: white;
+  width: 3em;
+  padding: 6px;
+}
+QPushButton:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}
+
+QPushButton:pressed{
+background-color: rgba(255, 255, 255, 200);
+}</string>
+           </property>
+           <property name="text">
+            <string>Проверка таблицы</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="2">
+          <widget class="QLabel" name="label_rezult">
+           <property name="minimumSize">
+            <size>
+             <width>365</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>360</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLabel{
+ border-style: outset;
+ border-width: 1px;
+ border-radius: 5px;
+color:rgb(255, 0, 0);
+
+font: bold 12px;
+}</string>
+           </property>
+           <property name="text">
+            <string>РЕЗУЛЬТАТ</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="2">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_12">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>23</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 12px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Работа с файлами настроек</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_2">
+         <property name="horizontalSpacing">
+          <number>20</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QLineEdit" name="text_loadLogName">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QLineEdit:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="butt_loadSettFile">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+  border-style: outset;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 100);
+  font: bold 16px;
+ color:rgb(14, 27, 143);
+border-color: white;
+  width: 3em;
+  padding: 6px;
+}
+QPushButton:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}
+
+QPushButton:pressed{
+background-color: rgba(255, 255, 255, 200);
+}</string>
+           </property>
+           <property name="text">
+            <string>Загрузить</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLineEdit" name="text_saveLogName">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>16</family>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QLineEdit{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+font: bold, 16;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QLineEdit:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="butt_saveSettFile">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>-1</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+  border-style: outset;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 100);
+  font: bold 16px;
+ color:rgb(14, 27, 143);
+border-color: white;
+  width: 3em;
+  padding: 6px;
+}
+QPushButton:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}
+
+QPushButton:pressed{
+background-color: rgba(255, 255, 255, 200);
+}</string>
+           </property>
+           <property name="text">
+            <string>Сохранить</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line_4">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_13">
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(14, 27, 143);
+font: bold 12px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Работа с файлами логов</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_3">
+         <property name="horizontalSpacing">
+          <number>20</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="QDateEdit" name="date_log">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>31</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>19px</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <italic>false</italic>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QDateEdit{
+  border-style: outset;
+  border-width: 1px;
+  border-radius: 5px;
+  color: rgb(14,27,143);
+  background-color: rgba(255, 255, 255, 200);
+}
+QDateEdit:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+           <property name="buttonSymbols">
+            <enum>QAbstractSpinBox::UpDownArrows</enum>
+           </property>
+           <property name="minimumDateTime">
+            <datetime>
+             <hour>0</hour>
+             <minute>0</minute>
+             <second>0</second>
+             <year>2020</year>
+             <month>4</month>
+             <day>20</day>
+            </datetime>
+           </property>
+           <property name="maximumDate">
+            <date>
+             <year>2030</year>
+             <month>1</month>
+             <day>1</day>
+            </date>
+           </property>
+           <property name="minimumDate">
+            <date>
+             <year>2020</year>
+             <month>4</month>
+             <day>20</day>
+            </date>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="butt_openLog">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+  border-style: outset;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 100);
+  font: bold 16px;
+ color:rgb(14, 27, 143);
+border-color: white;
+  width: 3em;
+  padding: 6px;
+}
+QPushButton:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}
+
+QPushButton:pressed{
+background-color: rgba(255, 255, 255, 200);
+}</string>
+           </property>
+           <property name="text">
+            <string>Открыть лог</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="butt_openFolderLog">
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+  border-style: outset;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 100);
+  font: bold 16px;
+ color:rgb(14, 27, 143);
+border-color: white;
+  width: 3em;
+  padding: 6px;
+}
+QPushButton:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}
+
+QPushButton:pressed{
+background-color: rgba(255, 255, 255, 200);
+}</string>
+           </property>
+           <property name="text">
+            <string>Папка с логами</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="butt_addUser">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>250</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>250</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+  border-style: outset;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 100);
+  font: bold 16px;
+ color:rgb(14, 27, 143);
+border-color: white;
+  width: 3em;
+  padding: 6px;
+}
+QPushButton:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}
+
+QPushButton:pressed{
+background-color: rgba(255, 255, 255, 200);
+}</string>
+           </property>
+           <property name="text">
+            <string>Добавление пользователей</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>10</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="butt_exit">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+  border-style: outset;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgba(100, 100, 100, 100);
+  font: bold 16px;
+ color:rgb(14, 27, 143);
+border-color: white;
+  width: 3em;
+  padding: 6px;
+}
+QPushButton:hover{
+border-width: 3px;
+border-radius: 13px;
+border-color:white;
+color:black;
+background-color: rgba(255, 255, 255, 150);
+}
+
+QPushButton:pressed{
+background-color: rgba(255, 255, 255, 200);
+}</string>
+           </property>
+           <property name="text">
+            <string>Выход</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
